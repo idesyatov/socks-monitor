@@ -2,11 +2,9 @@ services:
   app:
     build: .
     ports:
-      - "${PORT:-8080}:8080"
+      - "${BIND:-0.0.0.0}:${PORT:-8080}:8080"
     volumes:
       - ./data:/app/data
     environment:
-      - DB_PATH=${DB_PATH:-/app/data/dashboard.db}
-      - HOST=${HOST:-0.0.0.0}
-      - PORT=8080
+      - DB_PATH=/app/data/dashboard.db
     restart: unless-stopped
