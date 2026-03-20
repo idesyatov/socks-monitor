@@ -1,0 +1,28 @@
+# Data
+data/
+
+# Handoff (architect ↔ coder)
+.handoff/
+
+# Project management (internal)
+pm/
+
+# Claude
+.claude/
+CLAUDE.md
+
+# Environment
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node (local dev artifacts)
+frontend/node_modules/

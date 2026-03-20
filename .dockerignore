@@ -1,0 +1,8 @@
+data/
+.handoff/
+pm/
+docs/
+.git/
+.claude/
+*.md
+frontend/node_modules/
